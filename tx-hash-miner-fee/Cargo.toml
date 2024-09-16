@@ -1,0 +1,19 @@
+[package]
+name = "miner"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eyre = "0.3"
+alloy = { version = "0.3", features = [
+    "contract",
+    "network",
+    "provider-ws",
+    "rpc-types-eth",
+    "signer-local",
+    "consensus",
+] }
+clap = { version = "4.3", features = ["derive"] }
+hex = "0.4" 
+tokio = { version = "1", features = ["full"] } # For asynchronous runtime
+

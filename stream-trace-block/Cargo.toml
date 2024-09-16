@@ -1,0 +1,16 @@
+[package]
+name = "block_template"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.29.1", features = ["full"] }
+clap = {version = "4", features = ["derive"]}
+eyre = "0.6.8"
+futures = "0.3"
+futures-util = "0.3"
+
+alloy-provider = { version = "0.2", features = ["ws", "trace-api"] }
+alloy-rpc-client = { version = "0.2", features = ["ws"] }
+alloy-rpc-types = { version = "0.2" }
+alloy-rpc-types-trace = { version = "0.2" }
