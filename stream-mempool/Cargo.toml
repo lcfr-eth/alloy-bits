@@ -12,3 +12,20 @@ futures-util = "0.3"
 
 alloy-provider = { version = "0.2", features = ["ws"] }
 alloy-rpc-client = { version = "0.2", features = ["ws"] }
+
+alloy = { version = "0.6.4", features = [
+    "full",
+    "eips",
+    "hyper",
+    "json-rpc",
+    "node-bindings",
+    "rpc-client",
+    "rpc-types-debug",
+    "rpc-types-trace",
+    "signer-aws",
+    "signer-keystore",
+    "signer-ledger",
+    "signer-mnemonic",
+    "signer-trezor",
+    "signer-yubihsm",
+] }
